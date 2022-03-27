@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.projectlombok:lombok:1.18.16'
+    implementation 'org.projectlombok:lombok:1.18.16'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '4.2.2'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    testImplementation group: 'org.testng', name: 'testng', version: '7.4.0'
+    compile group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
+}
+
+test {
+    useJUnitPlatform()
+}
